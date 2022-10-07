@@ -235,14 +235,6 @@ inode_manager::write_file(uint32_t inum, const char *buf, int size)
   char buf_aligned[BLOCK_SIZE * num_block];
   memcpy(buf_aligned, buf, size);
 
-  // if(old_num_block > NDIRECT){
-  //   blockid_t indirect_block_id = ino->blocks[NDIRECT];
-  //   bm->read_block(indirect_block_id, indirect_block);
-  // }
-  // else if (num_block > NDIRECT){
-  //   blockid_t indirect_block_id = bm->alloc_block();
-  //   ino->blocks[NDIRECT] = indirect_block_id;
-  // }
   if(old_num_block > NDIRECT){
       blockid_t indirect_block_id = ino->blocks[NDIRECT];
       bm->read_block(indirect_block_id, indirect_block);
@@ -281,7 +273,6 @@ inode_manager::write_file(uint32_t inum, const char *buf, int size)
       }
       else{
         blockid_t block_id = ((blockid_t*)indirect_block)[i - NDIRECT];
-        // printf("test_segf:%d, block:%d\n",i,block_id);
         bm->write_block(block_id, buf_aligned + i * BLOCK_SIZE);
       }
     }
@@ -294,7 +285,6 @@ inode_manager::write_file(uint32_t inum, const char *buf, int size)
       }
       else{
         ((blockid_t*)indirect_block)[i - NDIRECT] = block_id;
-        // printf("101: %d-%d\n",block_id,((blockid_t*)indirect_block)[i - NDIRECT]);
       }
     }
 
