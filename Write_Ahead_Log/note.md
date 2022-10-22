@@ -1,4 +1,4 @@
-# Note of Lab1
+# Note of Lab2
 ![layers](./assets/lab2a.png)
 这个lab是今年新出的，其实有点僵硬。一开始测试脚本有问题，导致我浪费了一下午debug。。。 :(
 
