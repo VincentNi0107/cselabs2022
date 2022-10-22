@@ -16,4 +16,4 @@ Guidance里说”Note that in practice, system crash may also occur when a log e
 ## Part 3: Checkpoint
 因为我没用log文件 所以不用做Checkpoint操作。：）
 
-总之就partA看来这个lab设计的不算很好，不如去年的[map-reduce](https://ipads.se.sjtu.edu.cn/courses/cse/2021/labs/lab2.html),作为对WAL的训练也不如往届的[handson1](https://ipads.se.sjtu.edu.cn/courses/cse/2021/handson/handson-1.html)和[handson2](https://ipads.se.sjtu.edu.cn/courses/cse/2021/handson/handson-2.html)。
+就partA看来这个lab设计的不算很好，不如去年的[map-reduce](https://ipads.se.sjtu.edu.cn/courses/cse/2021/labs/lab2.html),作为对WAL的训练也不如往届的[handson1](https://ipads.se.sjtu.edu.cn/courses/cse/2021/handson/handson-1.html)和[handson2](https://ipads.se.sjtu.edu.cn/courses/cse/2021/handson/handson-2.html)。
