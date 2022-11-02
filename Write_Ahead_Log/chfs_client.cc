@@ -253,6 +253,11 @@ chfs_client::mkdir(inum parent, const char *name, mode_t mode, inum &ino_out)
         return r;
     }
 
+    if (ec->get(parent, buf) != extent_protocol::OK){
+        r = IOERR;
+        return r;
+    }
+
     buf = buf + name +'\0' + filename(ino_out) + '\0';
 
     if (ec->put(parent, buf) != extent_protocol::OK){
