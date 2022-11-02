@@ -1,5 +1,5 @@
-# Note of Lab2
-![layers](./assets/lab2a.png)
+# Note of Lab2A
+![layers](./assets/lab2b-1.png)
 这个lab是今年新出的，其实有点僵硬。一开始测试脚本有问题，导致我浪费了一下午debug。。。 :(
 
 由于这一部分都是串行操作，不存在transaction之间的action交叉，所以WAL的很多东西是用不到的，比如tx_id,action_id,前向指针以及persister里的mtx锁。预测一波lab2b是文件系统的多线程读写，这些到时候再写，这个lab里就偷懒了。

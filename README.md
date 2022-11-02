@@ -5,5 +5,6 @@
 | Labs           | Notes                                        | Remarks                                                      |
 | -------------- | -------------------------------------------- | ------------------------------------------------------------ |
 | [Lab1](./Basic_File_System/) | [Basic File System](./Basic_File_System/NOTE.md)         | An inode-based file system.         |
-| [Lab2A](./Write_Ahead_Log/) | [Atomicity](./Write_Ahead_Log/note.md)         | Add write ahead log to lab1.         |
+| [Lab2A](./Write_Ahead_Log/) | [Atomicity](./Write_Ahead_Log/NOTE.md)         | Add write ahead log to lab1.         |
+| [Lab2B](./RPC_and_Lock_Server/) | [RPC & Lock Server](./RPC_and_Lock_Server/NOTE.md)         | RPC based Multi-thread FileSystem.         |
 
